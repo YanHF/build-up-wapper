@@ -21,6 +21,7 @@
         <module>eureka</module>
         <module>spark</module>
         <module>flink</module>
+        <module>tools</module>
     </modules>
 
     <name>build-up-wapper</name>
