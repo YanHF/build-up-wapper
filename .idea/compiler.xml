@@ -8,9 +8,10 @@
         <outputRelativeToContentRoot value="true" />
         <module name="flink" />
         <module name="cache" />
+        <module name="common" />
         <module name="spark" />
-        <module name="tools" />
         <module name="eureka" />
+        <module name="tools" />
         <module name="algorithm" />
       </profile>
     </annotationProcessing>
