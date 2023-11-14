@@ -1,5 +1,7 @@
 package com.huaifang.yan.sort;
 
+import java.util.Arrays;
+
 /**
  * 插入排序
  */
@@ -25,13 +27,13 @@ public class InsertionSort {
 
     public static void main(String[] args) {
 
-        int N = 20000;
-        Integer[] arr = SortTestHelper.generateRandomArray(N, 0, 100000);
+        int N = 10;
+        Integer[] arr = SortTestHelper.generateRandomArray(N, 0, 100);
+        System.out.println("before sort");
+        System.out.println(Arrays.toString(arr));
         InsertionSort.sort(arr);
-        for( int i = 0 ; i < arr.length ; i ++ ){
-            System.out.print(arr[i]);
-            System.out.print(' ');
-        }
+        System.out.println("after sort");
+        System.out.println(Arrays.toString(arr));
     }
 
 }

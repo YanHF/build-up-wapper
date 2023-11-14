@@ -13,7 +13,7 @@
 
   <groupId>com.huaifang.yan</groupId>
   <artifactId>eureka</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <packaging>jar</packaging>
 
   <name>eureka</name>
   <!-- FIXME change it to the project's website -->
