@@ -3,7 +3,7 @@ package wapper.common.core.domain.entity;
 import wapper.common.constant.UserConstants;
 import wapper.common.core.domain.BaseEntity;
 
-import javax.validation.constraints.Size;
+
 
 /**
  * 字典数据表 sys_dict_data
@@ -61,7 +61,7 @@ public class SysDictData extends BaseEntity
         this.dictSort = dictSort;
     }
 
-    @Size(min = 0, max = 100, message = "字典标签长度不能超过100个字符")
+
     public String getDictLabel()
     {
         return dictLabel;
@@ -72,7 +72,7 @@ public class SysDictData extends BaseEntity
         this.dictLabel = dictLabel;
     }
 
-    @Size(min = 0, max = 100, message = "字典键值长度不能超过100个字符")
+
     public String getDictValue()
     {
         return dictValue;
@@ -83,7 +83,7 @@ public class SysDictData extends BaseEntity
         this.dictValue = dictValue;
     }
 
-    @Size(min = 0, max = 100, message = "字典类型长度不能超过100个字符")
+
     public String getDictType()
     {
         return dictType;
@@ -94,7 +94,7 @@ public class SysDictData extends BaseEntity
         this.dictType = dictType;
     }
 
-    @Size(min = 0, max = 100, message = "样式属性长度不能超过100个字符")
+
     public String getCssClass()
     {
         return cssClass;

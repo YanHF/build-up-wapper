@@ -1,7 +1,8 @@
 package wapper.common.utils.uuid;
 
-import com.ruoyi.common.utils.DateUtils;
-import com.ruoyi.common.utils.StringUtils;
+
+
+import wapper.common.utils.StringUtils;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
@@ -59,7 +60,7 @@ public class Seq
      */
     public static String getId(AtomicInteger atomicInt, int length)
     {
-        String result = DateUtils.dateTimeNow();
+        String result = StringUtils.EMPTY;//DateUtils.dateTimeNow();
         result += machineCode;
         result += getSeq(atomicInt, length);
         return result;
