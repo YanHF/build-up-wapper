@@ -7,13 +7,28 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="flink" />
+        <module name="exception" />
         <module name="cache" />
         <module name="common" />
         <module name="spark" />
         <module name="eureka" />
+        <module name="machine" />
         <module name="tools" />
         <module name="algorithm" />
       </profile>
     </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="algorithm" options="-parameters" />
+      <module name="cache" options="-parameters" />
+      <module name="common" options="-parameters" />
+      <module name="eureka" options="-parameters" />
+      <module name="exception" options="-parameters" />
+      <module name="flink" options="-parameters" />
+      <module name="machine" options="-parameters" />
+      <module name="spark" options="-parameters" />
+      <module name="tools" options="-parameters" />
+    </option>
   </component>
 </project>
