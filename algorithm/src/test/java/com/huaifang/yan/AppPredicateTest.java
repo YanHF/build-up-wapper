@@ -1,20 +1,20 @@
 package com.huaifang.yan;
 
-import static org.junit.Assert.assertTrue;
 
-import org.junit.Test;
+
+
 
 /**
  * Unit test for simple App.
  */
-public class AppTest 
+public class AppPredicateTest
 {
     /**
      * Rigorous Test :-)
      */
-    @Test
+
     public void shouldAnswerWithTrue()
     {
-        assertTrue( true );
+
     }
 }
