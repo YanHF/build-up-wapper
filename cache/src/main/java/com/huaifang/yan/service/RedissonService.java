@@ -14,17 +14,17 @@ public class RedissonService {
 
     private Redisson redisson=null;
 
-    @PostConstruct
+    //@PostConstruct
     private void init(){
-        String host = "r-2zelm0w7gsexstl98kpd.redis.rds.aliyuncs.com";
-        Config config = new Config();
-        SingleServerConfig singleSerververConfig = config.useSingleServer();
-        singleSerververConfig.setAddress("redis://"+host+":"+6379);
-        singleSerververConfig.setClientName("r-2zelm0w7gsexstl98k");
-        singleSerververConfig.setPassword("Yhf867301!");
-        redisson= (Redisson) Redisson.create(config);
-        RKeys keys= redisson.getKeys();
-        System.out.println(keys.getKeys());
+//        String host = "r-2zelm0w7gsexstl98kpd.redis.rds.aliyuncs.com";
+//        Config config = new Config();
+//        SingleServerConfig singleSerververConfig = config.useSingleServer();
+//        singleSerververConfig.setAddress("redis://"+host+":"+6379);
+//        singleSerververConfig.setClientName("r-2zelm0w7gsexstl98k");
+//        singleSerververConfig.setPassword("Yhf867301!");
+//        redisson= (Redisson) Redisson.create(config);
+//        RKeys keys= redisson.getKeys();
+//        System.out.println(keys.getKeys());
     }
 
     public void lock(){

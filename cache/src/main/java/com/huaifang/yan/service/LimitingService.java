@@ -40,7 +40,7 @@ public class LimitingService {
             "end";
     private JedisPool pool;
 
-    @PostConstruct
+    //@PostConstruct
     private void init(){
 
         String host = "r-2zelm0w7gsexstl98kpd.redis.rds.aliyuncs.com";
