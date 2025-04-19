@@ -2,6 +2,7 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
@@ -13,6 +14,7 @@
         <module name="spark" />
         <module name="eureka" />
         <module name="machine" />
+        <module name="index" />
         <module name="tools" />
         <module name="algorithm" />
       </profile>
@@ -26,6 +28,7 @@
       <module name="eureka" options="-parameters" />
       <module name="exception" options="-parameters" />
       <module name="flink" options="-parameters" />
+      <module name="index" options="-parameters" />
       <module name="machine" options="-parameters" />
       <module name="spark" options="-parameters" />
       <module name="tools" options="-parameters" />
