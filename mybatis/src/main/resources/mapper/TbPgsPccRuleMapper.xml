@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.huaifang.yan.mapper.TbPgsPccRuleMapper">
+    
+
+    <sql id="selectTbPgsPccRuleVo">
+        select id, level, airline, rule, tariff, dep_type, dep_code, arr_type, arr_code, farebasis, apply_iata, not_apply_iata, apply_pcc, not_apply_pcc, operator, state, env, remark, gmt_created, gmt_modified, del_flag from tb_pgs_pcc_rule
+    </sql>
+
+    <select id="selectTbPgsPccRuleById" parameterType="Long" resultType="com.huaifang.yan.dal.TbPgsPccRuleDO">
+        <include refid="selectTbPgsPccRuleVo"/>
+        where id = #{id}
+    </select>
+
+</mapper>

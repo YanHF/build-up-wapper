@@ -26,6 +26,7 @@
         <module>machine</module>
         <module>exception</module>
         <module>index</module>
+        <module>mybatis</module>
     </modules>
 
     <name>build-up-wapper</name>
@@ -51,13 +52,36 @@
         <fastjson.version>1.2.59</fastjson.version>
         <kryo.version>4.0.2</kryo.version>
 
+        <mybatis.version>3.4.5</mybatis.version>
+        <mysql.version>5.1.38</mysql.version>
+
     </properties>
 
     <dependencyManagement>
-
-
-
         <dependencies>
+
+            <dependency>
+                <groupId>org.apache.logging.log4j</groupId>
+                <artifactId>log4j-core</artifactId>
+                <version>2.14.1</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.logging.log4j</groupId>
+                <artifactId>log4j-api</artifactId>
+                <version>2.14.1</version>
+            </dependency>
+
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>${mysql.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.mybatis</groupId>
+                <artifactId>mybatis</artifactId>
+                <version>${mybatis.version}</version>
+            </dependency>
 
             <dependency>
                 <groupId>com.esotericsoftware</groupId>

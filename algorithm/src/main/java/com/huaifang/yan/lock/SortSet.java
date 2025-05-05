@@ -22,6 +22,4 @@ public class SortSet {
                     + "else\n" //直接成功
                     + " redis.call('ZADD', key , score , value)\n"
                     + " return 1\n" + "end";
-
-
 }
