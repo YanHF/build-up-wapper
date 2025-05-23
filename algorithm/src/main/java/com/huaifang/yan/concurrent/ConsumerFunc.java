@@ -14,6 +14,11 @@ public class ConsumerFunc implements Runnable ,Comparable<ConsumerFunc>{
 
     @Override
     public void run() {
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
         System.out.println("当前线程名称"+Thread.currentThread().getName()+"数据值"+String.valueOf(i));
     }
 }

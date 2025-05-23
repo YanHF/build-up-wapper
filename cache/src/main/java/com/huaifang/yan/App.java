@@ -4,19 +4,21 @@ import com.huaifang.yan.exeption.BusinessException;
 import com.huaifang.yan.model.GenericEnum;
 import com.huaifang.yan.model.MyEnum;
 import com.huaifang.yan.model.ValidatorEnum;
+import org.apache.catalina.startup.Tomcat;
+import org.springframework.boot.web.embedded.tomcat.TomcatWebServer;
 
 /**
  * Hello world!
  *
  */
-public class App 
+public class App
 {
     public static void main( String[] args ) throws BusinessException {
-        System.out.println(MyEnum.INT_VALUE.getValue().getValue());
-        System.out.println(MyEnum.STRING_VALUE.getValue().getValue());
-        System.out.println(MyEnum.DOUBLE_VALUE.getValue().getValue());
 
-        ValidatorEnum.Name.getPredicate().test(new GenericEnum<String>("123213"));
-        throw ValidatorEnum.Name.getBusinessException();
+
+    }
+
+    public void Start() throws BusinessException {
+       // TomcatWebServer.this.getTomcat().getServer().await();
     }
 }

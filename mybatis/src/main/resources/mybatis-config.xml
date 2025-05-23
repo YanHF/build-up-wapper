@@ -16,8 +16,18 @@
     </typeAliases>
 
     <typeHandlers>
-        <typeHandler handler="com.huaifang.yan.type.ListTypeHandler"/>
+        <typeHandler javaType="java.util.List" jdbcType="VARCHAR" handler="com.huaifang.yan.type.ListTypeHandler"/>
     </typeHandlers>
+
+    <plugins>
+        <plugin interceptor="com.huaifang.yan.plugin.ExecutorConsumerPlugin">
+            <property name="name" value="ExecutorConsumerPlugin"/>
+        </plugin>
+        <plugin interceptor="com.huaifang.yan.plugin.ParameterConsumerPlugin">
+            <property name="name" value="ParameterConsumerPlugin"/>
+
+        </plugin>
+    </plugins>
 
     <environments default="development">
         <environment id="development">
