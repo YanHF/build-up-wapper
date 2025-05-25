@@ -1,7 +1,7 @@
 package com.huaifang.yan.concurrent;
 
 import org.omg.CORBA.SetOverrideType;
-import org.openjdk.jol.info.ClassLayout;
+
 
 public class ConsumerFunc implements Runnable ,Comparable<ConsumerFunc>{
     public ConsumerFunc(int i) {
@@ -26,6 +26,9 @@ public class ConsumerFunc implements Runnable ,Comparable<ConsumerFunc>{
     }
 
     public static void main(String[] args) {
+
+        System.out.println(Integer.MAX_VALUE+1);
+/*
         Object o = new Object();
         System.out.println(ClassLayout.parseInstance(o).toPrintable());
         Thread thread = new Thread(()->{
@@ -42,6 +45,7 @@ public class ConsumerFunc implements Runnable ,Comparable<ConsumerFunc>{
                 System.out.println(ClassLayout.parseInstance(o).toPrintable());
             }
         }
+*/
 
     }
 }
