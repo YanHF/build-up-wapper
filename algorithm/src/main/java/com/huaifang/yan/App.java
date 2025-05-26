@@ -14,6 +14,10 @@ import java.util.concurrent.locks.LockSupport;
  */
 public class App 
 {
+    static int a=0;
+    static int b=0;
+    static int c=0;
+    static int d=0;
     private static volatile Integer num = 1;
     static ThreadLocal<String> B = new ThreadLocal<>();
     static ThreadLocal<String> A = new ThreadLocal<>();
@@ -291,7 +295,7 @@ public class App
     }*/
 
 
-    public static void main(String[] args) throws InterruptedException {
+   /* public static void main(String[] args) throws InterruptedException {
 
         CyclicBarrier cyclicBarrier = new CyclicBarrier(3,()->{
             System.out.println("条件具备"+Thread.currentThread().getName() + "<UNK>");
@@ -342,6 +346,23 @@ public class App
         TimeUnit.SECONDS.sleep(6);
 
         System.out.println(num);
+    }
+*/
+    public static void main(String[] args) throws InterruptedException {
+
+
+        Thread threadA = new Thread(() -> {
+            a=1;
+            c=a;
+        });
+
+        Thread threadB = new Thread(() -> {
+            b=1;
+            d=b;
+        });
+        threadA.start();
+        threadB.start();
+        System.out.println("a="+a+",b="+b+",c="+c+",d="+d);
     }
 
 }
