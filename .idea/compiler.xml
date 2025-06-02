@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="flink" />
         <module name="exception" />
+        <module name="spring" />
         <module name="cache" />
         <module name="common" />
         <module name="spark" />
@@ -33,6 +34,7 @@
       <module name="machine" options="-parameters" />
       <module name="mybatis" options="-parameters" />
       <module name="spark" options="-parameters" />
+      <module name="spring" options="-parameters" />
       <module name="tools" options="-parameters" />
     </option>
   </component>

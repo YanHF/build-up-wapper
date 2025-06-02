@@ -27,6 +27,7 @@
         <module>exception</module>
         <module>index</module>
         <module>mybatis</module>
+        <module>spring</module>
     </modules>
 
     <name>build-up-wapper</name>
