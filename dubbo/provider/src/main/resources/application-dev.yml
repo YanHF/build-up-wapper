@@ -1,0 +1,13 @@
+server:
+  port: 8001
+logging:
+  config: classpath:logback.xml
+
+dubbo:
+  application:
+    name: dubbo-provider
+  protocol:
+    name: dubbo
+    port: 20883
+  registry:
+    address: nacos://localhost:8848

@@ -7,17 +7,21 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="flink" />
         <module name="exception" />
         <module name="cache" />
-        <module name="common" />
-        <module name="spark" />
         <module name="eureka" />
-        <module name="machine" />
         <module name="mybatis" />
         <module name="index" />
+        <module name="dubbo" />
         <module name="tools" />
+        <module name="flink" />
+        <module name="common" />
+        <module name="spark" />
+        <module name="provider" />
+        <module name="machine" />
+        <module name="consumer" />
         <module name="algorithm" />
+        <module name="dubbo-api" />
       </profile>
     </annotationProcessing>
   </component>
@@ -26,12 +30,16 @@
       <module name="algorithm" options="-parameters" />
       <module name="cache" options="-parameters" />
       <module name="common" options="-parameters" />
+      <module name="consumer" options="-parameters" />
+      <module name="dubbo" options="-parameters" />
+      <module name="dubbo-api" options="-parameters" />
       <module name="eureka" options="-parameters" />
       <module name="exception" options="-parameters" />
       <module name="flink" options="-parameters" />
       <module name="index" options="-parameters" />
       <module name="machine" options="-parameters" />
       <module name="mybatis" options="-parameters" />
+      <module name="provider" options="-parameters" />
       <module name="spark" options="-parameters" />
       <module name="tools" options="-parameters" />
     </option>

@@ -5,6 +5,10 @@
     <file url="file://$PROJECT_DIR$/cache/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cache/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/common/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dubbo/consumer/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dubbo/dubbo-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dubbo/provider/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dubbo/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/eureka/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/exception/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/flink/src/main/java" charset="UTF-8" />

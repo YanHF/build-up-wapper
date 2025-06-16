@@ -2,6 +2,8 @@ package com.huaifang.yan.concurrent;
 
 import org.omg.CORBA.SetOverrideType;
 
+import java.util.concurrent.CompletableFuture;
+
 
 public class ConsumerFunc implements Runnable ,Comparable<ConsumerFunc>{
     public ConsumerFunc(int i) {
@@ -26,26 +28,6 @@ public class ConsumerFunc implements Runnable ,Comparable<ConsumerFunc>{
     }
 
     public static void main(String[] args) {
-
-        System.out.println(Integer.MAX_VALUE+1);
-/*
-        Object o = new Object();
-        System.out.println(ClassLayout.parseInstance(o).toPrintable());
-        Thread thread = new Thread(()->{
-            for (int i = 0; i < 3; i++) {
-                synchronized (o) {
-                    System.out.println(ClassLayout.parseInstance(o).toPrintable());
-                }
-            }
-        });
-        thread.start();
-
-        for (int i = 0; i < 3; i++) {
-            synchronized (o) {
-                System.out.println(ClassLayout.parseInstance(o).toPrintable());
-            }
-        }
-*/
-
+        CompletableFuture.runAsync(()->{System.out.println(Thread.currentThread().getName()+"<UNK>");});
     }
 }

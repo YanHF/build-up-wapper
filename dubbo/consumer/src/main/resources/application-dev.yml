@@ -1,0 +1,11 @@
+server:
+  port: 8002
+logging:
+  config: classpath:logback.xml
+
+dubbo:
+  application:
+    name: dubbo-consumer
+    qos-port: 33333
+  registry:
+    address: nacos://localhost:8848
